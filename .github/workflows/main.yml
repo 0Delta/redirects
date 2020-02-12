@@ -6,16 +6,17 @@ jobs:
     runs-on: ubuntu-latest
     name: run
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@gh-pages
 
     - name: Golang Action
       uses: cedrickring/golang-action@1.4.1
   
-    - uses: actions/checkout@master
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git add --update
+        git commit -m "Updated by GithubActions at HOGE"
 
     - name: Push changes
       uses: ad-m/github-push-action@master
