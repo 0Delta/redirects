@@ -6,11 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     name: run
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@gitactions-test
 
     - name: Golang Action
       uses: cedrickring/golang-action@1.4.1
   
+    - uses: actions/checkout@gitactions-test
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
