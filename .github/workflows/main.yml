@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Golang Action
-      uses: cedrickring/golang-action/go1.6@1.4.1
+      uses: cedrickring/golang-action/go@1.4.1
   
   push:
     runs-on: ubuntu-latest
