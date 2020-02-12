@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Golang Action
-      uses: cedrickring/golang-action/go1.6@1.4.1
+    - uses: cedrickring/golang-action/go1.6@1.4.1
       run: |
         go get -u github.com/koron/go-github
         go get -u gopkg.in/yaml.v2
