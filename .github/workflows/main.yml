@@ -2,7 +2,7 @@ name: CI
 
 on: [push]
 jobs:
-  checks:
+  build:
     runs-on: ubuntu-latest
     name: run
     steps:
@@ -11,9 +11,6 @@ jobs:
     - name: Golang Action
       uses: cedrickring/golang-action@1.4.1
   
-  push:
-    runs-on: ubuntu-latest
-    steps:
     - uses: actions/checkout@master
     - name: Commit files
       run: |
