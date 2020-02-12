@@ -7,7 +7,8 @@ jobs:
     name: run
     steps:
     - uses: actions/checkout@v2
-      ref: 'gh-pages'
+      with:
+        ref: 'gh-pages'
 
     - name: Golang Action
       uses: cedrickring/golang-action@1.4.1
